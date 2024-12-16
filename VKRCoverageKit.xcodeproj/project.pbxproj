@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2953E188CD408EE431FA3C63 /* Pods_VKRCoverageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C02ABCC71CCCC4115B83D4 /* Pods_VKRCoverageKit.framework */; };
 		7C3BFC442D1072BC004DBEC3 /* VKRCoverageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3BFC432D1072BC004DBEC3 /* VKRCoverageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C3BFC4B2D1072D2004DBEC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3BFC4A2D1072D2004DBEC3 /* User.swift */; };
+		7C3BFC4E2D107764004DBEC3 /* SwiftParser in Frameworks */ = {isa = PBXBuildFile; productRef = 7C3BFC4D2D107764004DBEC3 /* SwiftParser */; };
+		7C3BFC502D107764004DBEC3 /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = 7C3BFC4F2D107764004DBEC3 /* SwiftSyntax */; };
+		7C3BFC522D107764004DBEC3 /* SwiftSyntaxBuilder in Frameworks */ = {isa = PBXBuildFile; productRef = 7C3BFC512D107764004DBEC3 /* SwiftSyntaxBuilder */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FF955356F7E2F89594D787B /* Pods-VKRCoverageKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKRCoverageKit.release.xcconfig"; path = "Target Support Files/Pods-VKRCoverageKit/Pods-VKRCoverageKit.release.xcconfig"; sourceTree = "<group>"; };
 		7C3BFC402D1072BC004DBEC3 /* VKRCoverageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VKRCoverageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3BFC432D1072BC004DBEC3 /* VKRCoverageKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKRCoverageKit.h; sourceTree = "<group>"; };
+		7C3BFC4A2D1072D2004DBEC3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BDDBA6465F1811D2E303AA20 /* Pods-VKRCoverageKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKRCoverageKit.debug.xcconfig"; path = "Target Support Files/Pods-VKRCoverageKit/Pods-VKRCoverageKit.debug.xcconfig"; sourceTree = "<group>"; };
+		E5C02ABCC71CCCC4115B83D4 /* Pods_VKRCoverageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKRCoverageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,17 +29,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C3BFC4E2D107764004DBEC3 /* SwiftParser in Frameworks */,
+				7C3BFC522D107764004DBEC3 /* SwiftSyntaxBuilder in Frameworks */,
+				7C3BFC502D107764004DBEC3 /* SwiftSyntax in Frameworks */,
+				2953E188CD408EE431FA3C63 /* Pods_VKRCoverageKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D91BB3A8FE9E76D06DFDD13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5C02ABCC71CCCC4115B83D4 /* Pods_VKRCoverageKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56BA8C4EA65D1F24095714A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDDBA6465F1811D2E303AA20 /* Pods-VKRCoverageKit.debug.xcconfig */,
+				5FF955356F7E2F89594D787B /* Pods-VKRCoverageKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7C3BFC362D1072BC004DBEC3 = {
 			isa = PBXGroup;
 			children = (
-				7C3BFC422D1072BC004DBEC3 /* VKRCoverageKit */,
+				7C3BFC422D1072BC004DBEC3 /* Sources */,
 				7C3BFC412D1072BC004DBEC3 /* Products */,
+				56BA8C4EA65D1F24095714A0 /* Pods */,
+				3D91BB3A8FE9E76D06DFDD13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -42,12 +74,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7C3BFC422D1072BC004DBEC3 /* VKRCoverageKit */ = {
+		7C3BFC422D1072BC004DBEC3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				7C3BFC432D1072BC004DBEC3 /* VKRCoverageKit.h */,
+				7C3BFC4A2D1072D2004DBEC3 /* User.swift */,
 			);
-			path = VKRCoverageKit;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C3BFC472D1072BC004DBEC3 /* Build configuration list for PBXNativeTarget "VKRCoverageKit" */;
 			buildPhases = (
+				FA9753BE2921225FD383EEAF /* [CP] Check Pods Manifest.lock */,
 				7C3BFC3B2D1072BC004DBEC3 /* Headers */,
 				7C3BFC3C2D1072BC004DBEC3 /* Sources */,
 				7C3BFC3D2D1072BC004DBEC3 /* Frameworks */,
@@ -78,6 +112,11 @@
 			dependencies = (
 			);
 			name = VKRCoverageKit;
+			packageProductDependencies = (
+				7C3BFC4D2D107764004DBEC3 /* SwiftParser */,
+				7C3BFC4F2D107764004DBEC3 /* SwiftSyntax */,
+				7C3BFC512D107764004DBEC3 /* SwiftSyntaxBuilder */,
+			);
 			productName = VKRCoverageKit;
 			productReference = 7C3BFC402D1072BC004DBEC3 /* VKRCoverageKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -93,6 +132,7 @@
 				TargetAttributes = {
 					7C3BFC3F2D1072BC004DBEC3 = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -105,6 +145,9 @@
 				Base,
 			);
 			mainGroup = 7C3BFC362D1072BC004DBEC3;
+			packageReferences = (
+				7C3BFC4C2D107764004DBEC3 /* XCRemoteSwiftPackageReference "swift-syntax" */,
+			);
 			productRefGroup = 7C3BFC412D1072BC004DBEC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -124,11 +167,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FA9753BE2921225FD383EEAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VKRCoverageKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7C3BFC3C2D1072BC004DBEC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C3BFC4B2D1072D2004DBEC3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -248,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -262,8 +331,10 @@
 		};
 		7C3BFC482D1072BC004DBEC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDDBA6465F1811D2E303AA20 /* Pods-VKRCoverageKit.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -274,6 +345,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -285,17 +357,24 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.VKRCoverageKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7C3BFC492D1072BC004DBEC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FF955356F7E2F89594D787B /* Pods-VKRCoverageKit.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -306,6 +385,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,10 +397,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.VKRCoverageKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -346,6 +430,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C3BFC4C2D107764004DBEC3 /* XCRemoteSwiftPackageReference "swift-syntax" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-syntax";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 600.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C3BFC4D2D107764004DBEC3 /* SwiftParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C3BFC4C2D107764004DBEC3 /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftParser;
+		};
+		7C3BFC4F2D107764004DBEC3 /* SwiftSyntax */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C3BFC4C2D107764004DBEC3 /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftSyntax;
+		};
+		7C3BFC512D107764004DBEC3 /* SwiftSyntaxBuilder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C3BFC4C2D107764004DBEC3 /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftSyntaxBuilder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7C3BFC372D1072BC004DBEC3 /* Project object */;
 }
